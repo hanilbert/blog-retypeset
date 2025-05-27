@@ -1,5 +1,5 @@
 {
-  "name": "eminent-ephemera",
+  "name": "astro-theme-retypeset",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@10.11.0",
@@ -11,8 +11,7 @@
     "astro": "astro",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "comments": "curl -L https://unpkg.com/@waline/client@latest/dist/waline.css -o public/assets/waline/waline.css && curl -L https://unpkg.com/@waline/client@latest/dist/waline.js -o public/assets/waline/waline.js",
-    "deploy": "astro build && wrangler pages deploy dist"
+    "comments": "curl -L https://unpkg.com/@waline/client@latest/dist/waline.css -o public/assets/waline/waline.css && curl -L https://unpkg.com/@waline/client@latest/dist/waline.js -o public/assets/waline/waline.js"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.5.3",
