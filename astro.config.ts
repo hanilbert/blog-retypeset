@@ -156,4 +156,18 @@ export default defineConfig({
   },
 
   adapter: cloudflare(),
+
+  vite: {
+    ssr: {
+      noExternal: ['astro-og-canvas'],
+    },
+    optimizeDeps: {
+      exclude: ['astro-og-canvas'],
+    },
+    build: {
+      rollupOptions: {
+        external: ['astro-og-canvas'],
+      },
+    },
+  },
 })
