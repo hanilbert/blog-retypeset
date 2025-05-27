@@ -36,14 +36,11 @@ export default defineConfig({
   site: url,
   base: '/',
   trailingSlash: 'always',
-
   prefetch: {
     prefetchAll: true,
     defaultStrategy: linkPrefetch,
   },
-
   ...imageConfig,
-
   i18n: {
     locales: Object.entries(langMap).map(([path, codes]) => ({
       path,
@@ -51,7 +48,6 @@ export default defineConfig({
     })),
     defaultLocale: locale,
   },
-
   integrations: [
     UnoCSS({
       injectReset: true,
@@ -72,7 +68,6 @@ export default defineConfig({
       SVG: false,
     }),
   ],
-
   markdown: {
     remarkPlugins: [
       remarkDirective,
@@ -148,24 +143,7 @@ export default defineConfig({
       },
     },
   },
-
   devToolbar: {
     enabled: false,
   },
-
-  vite: {
-    ssr: {
-      external: [
-        'node:fs/promises',
-        'node:path',
-        'node:buffer',
-        'node:crypto',
-        'node:module',
-        'fs',
-        'path',
-        'stream',
-        'string_decoder'
-      ]
-    }
-  }
 })

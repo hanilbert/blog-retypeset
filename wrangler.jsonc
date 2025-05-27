@@ -1,8 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "blog-retypeset",
-  "compatibility_date": "2025-05-27",
+  "name": "retypeset",
+  "main": "./dist/_worker.js/index.js",
+  "compatibility_date": "2025-03-25",
   "assets": {
     "directory": "./dist"
   }
-} 
+}
